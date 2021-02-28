@@ -5,7 +5,6 @@ const Filter = ({filterArgs, setFilterArgs, setShowAll}) => {
   // filter contracts
   const handleFilterChange = (event) => {
     console.log(`event.tg.value: ${event.target.value}`);
-    // TODO: TypeError: setShowAll is not a function
     setShowAll(false);
     setFilterArgs(event.target.value);
   };
